@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe, Logger } from '@nestjs/common';
-import { TransformInterceptor } from './transformer.interceptor';
+import { TransformInterceptor } from './common/interceptors/transformer.interceptor';
 
 async function bootstrap() {
   const logger = new Logger();
